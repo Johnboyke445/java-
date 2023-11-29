@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exo2 {
+public class exo1 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -15,21 +15,6 @@ public class exo2 {
         marque = sc.nextLine();
         System.out.print("Saisir le modèle du véhicule souhaité (ex: car) : ");
         modele = sc.nextLine();
-        System.out.print("Saisir le prix hors taxe du véhicule souhaité : ");
-    
-        String reponseElectrique = sc.next();
-
-        // Vérifie la réponse de l'utilisateur pour déterminer la TVAe
-        if (reponseElectrique.equalsIgnoreCase("oui")) {
-            tva = 0.05; // TVA à 5% pour les véhicules électriques
-        } else if (reponseElectrique.equalsIgnoreCase("non")) {
-            tva = 0.2; // TVA à 20% pour les véhicules non électriques
-        } else {
-            System.out.println("Réponse invalide. Veuillez répondre avec 'oui' ou 'non'.");
-            sc.close();
-            return;
-        }
-
         System.out.print("Saisir le prix hors taxe du véhicule souhaité : ");
         prixht = sc.nextDouble();
 
@@ -49,4 +34,3 @@ public class exo2 {
         sc.close();
     }
 }
-
